@@ -139,30 +139,30 @@ https://meyerweb.com/eric/tools/css/reset/
 */
 
 body {
+  color: #101010;
   font-family: Lato;
   font-style: normal;
-  color: #101010;
 }
 
 .BlogContainer {
-  width: 900px;
   margin: 0 auto;
-  padding-top: 76px;
   padding-bottom: 138px;
+  padding-top: 76px;
+  width: 900px;
 }
 
 .button {
-  display: block;
-  padding: 11px;
-  color: white;
   box-shadow: 0px 3px 10px rgba(104, 104, 104, 0.5);
-  line-height: 18px;
-  text-align: center;
-  font-weight: bold;
+  color: white;
+  display: block;
   font-size: 15px;
+  font-weight: bold;
+  line-height: 18px;
+  padding: 11px;
+  text-align: center;
 }
 
-.button--purplePink {
+.button .button--purplePink {
   background: linear-gradient(90deg, #AC519C 0.83%, #E5424F 100%);
 }
 

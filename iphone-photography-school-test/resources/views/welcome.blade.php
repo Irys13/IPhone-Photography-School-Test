@@ -12,6 +12,7 @@
     <body>
     <div id="app">
         <div class="BlogContainer">
+            <modal></modal>
             <blogPost></blogPost><sideBar></sideBar>
         </div>
     </div>
