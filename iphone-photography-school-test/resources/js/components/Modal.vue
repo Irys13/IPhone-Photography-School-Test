@@ -1,6 +1,6 @@
 <template>
 <div>
-    <button @click="openModal">Open Modal</button>
+    <button @click="openModal" class="button button--purplePink">Send Me The Tips</button>
 
     <div v-if='isOpen' class="Modal__window">
         <div class="Modal__content">
