@@ -133,6 +133,10 @@ table {
   border-spacing: 0;
 }
 
+button::-moz-focus-inner {
+  border: 0;
+}
+
 /* General page styling that appears on every page
 More can be found here:
 https://meyerweb.com/eric/tools/css/reset/
