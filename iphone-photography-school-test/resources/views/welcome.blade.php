@@ -12,6 +12,7 @@
     <body>
     <div id="app">
         <div class="BlogContainer">
+
             <blogPost></blogPost><sideBar></sideBar>
         </div>
     </div>

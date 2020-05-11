@@ -26,8 +26,10 @@ body {
     line-height: 18px;
     padding: 11px;
     text-align: center;
+    width: 100%;
+    border: 0;
+}
 
-    .button--purplePink {
-        background: linear-gradient(90deg, #AC519C 0.83%, #E5424F 100%);
-    }
+.button--purplePink {
+    background: linear-gradient(90deg, #AC519C 0.83%, #E5424F 100%);
 }

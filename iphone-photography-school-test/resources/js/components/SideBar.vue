@@ -1,8 +1,6 @@
 <template>
-    <div class="SideBar">
-        <a class="button button--purplePink">
-            Send Me The Tips
-        </a>
+    <div class="SideBar" id="app-modal">
+        <modal></modal>
     </div>
 </template>
 
@@ -16,3 +14,12 @@
         width: 220px;
     }
 </style>
+
+<script>
+
+const modal = Vue.component('modal', require('./Modal.vue').default);
+
+new Vue({
+    el:'#app-modal'
+});
+</script>
