@@ -21,7 +21,7 @@
             <div class="Modal__body">
                 <h2 class="Modal__title">Enter Your Email To Get <span class="Modal__title--green">FREE</span><br>
                 iPhone Photography Email Tips:</h2>
-                <input class="Modal__email">
+                <emailValidation></emailValidation>
                 <button class="button button--purplePink">Send Me The Tips »</button>
             </div>
 
@@ -145,4 +145,7 @@
                 }
             },
     });
+
+    const emailValidation = Vue.component('emailValidation', require('./EmailValidation.vue').default);
+
 </script>
