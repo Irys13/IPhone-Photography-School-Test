@@ -4,7 +4,9 @@
     </div>
 </template>
 
-<style>
+<style lang="scss">
+@import 'resources/sass/variables';
+
     .SideBar {
         background: #F5F5F5;
         display: inline-block;

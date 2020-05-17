@@ -4,9 +4,14 @@
     </div>
 </template>
 
-<style>
-.isInvalid {
-    border: 1px solid red;
+<style lang="scss">
+@import 'resources/sass/variables';
+
+.validation {
+
+    .isInvalid {
+        border: 1px solid red;
+}
 }
 
 .isValid {

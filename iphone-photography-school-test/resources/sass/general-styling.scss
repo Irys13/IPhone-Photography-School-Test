@@ -4,7 +4,7 @@ https://meyerweb.com/eric/tools/css/reset/
 */
 
 body {
-    color: #101010;
+    color: $text-primary;
     font-family: Lato;
     font-style: normal;
 }
@@ -19,7 +19,7 @@ body {
 
 .button {
     box-shadow: 0px 3px 10px rgba(104, 104, 104, 0.5);
-    color: white;
+    color: $background-primary;
     display: block;
     font-size: 15px;
     font-weight: bold;
@@ -31,5 +31,5 @@ body {
 }
 
 .button--purplePink {
-    background: linear-gradient(90deg, #AC519C 0.83%, #E5424F 100%);
+    background: linear-gradient(90deg, $gradient-background 0.83%, $gradient-background-secondary 100%);
 }

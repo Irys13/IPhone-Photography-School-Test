@@ -157,7 +157,7 @@ body {
 
 .button {
   box-shadow: 0px 3px 10px rgba(104, 104, 104, 0.5);
-  color: white;
+  color: #fff;
   display: block;
   font-size: 15px;
   font-weight: bold;
@@ -169,6 +169,6 @@ body {
 }
 
 .button--purplePink {
-  background: linear-gradient(90deg, #AC519C 0.83%, #E5424F 100%);
+  background: linear-gradient(90deg, #ac519c 0.83%, #E5424F 100%);
 }
 
