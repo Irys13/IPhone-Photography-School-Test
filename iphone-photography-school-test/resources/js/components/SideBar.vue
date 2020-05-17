@@ -19,7 +19,4 @@
 
 const modal = Vue.component('modal', require('./Modal.vue').default);
 
-new Vue({
-    el:'#app-modal'
-});
 </script>
