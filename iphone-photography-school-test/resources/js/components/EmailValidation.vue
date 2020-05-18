@@ -1,23 +1,17 @@
+<style lang="scss">
+@import 'resources/sass/css-reset';
+@import 'resources/sass/variables';
+@import 'resources/sass/general-styling';
+</style>
+
 <template>
-    <div>
-        <input :class="[isEmailValid()]" type="email" v-model="email" />
+    <div class="floatingLabelInput">
+        <input class="floatingLabelInput__inputField" :class="[isEmailValid()]" type="email" v-model="email" />
+        <label class="floatingLabelInput__inputLabel">Please enter your email here</label>
     </div>
 </template>
 
-<style lang="scss">
-@import 'resources/sass/variables';
 
-.validation {
-
-    .isInvalid {
-        border: 1px solid red;
-}
-}
-
-.isValid {
-    border: 1px solid green;
-}
-</style>
 
 <script>
 /* Regex source: https://stackoverflow.com/a/46181 */
@@ -33,7 +27,7 @@ export default({
   methods: {
     isEmailValid: function() {
       return (this.email == "")? "" : (this.reg.test(this.email)) ? 'isValid' : 'isInvalid';
-    }
+    },
   }
 });
 </script>

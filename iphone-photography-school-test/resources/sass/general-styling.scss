@@ -33,3 +33,62 @@ body {
 .button--purplePink {
     background: linear-gradient(90deg, $gradient-background 0.83%, $gradient-background-secondary 100%);
 }
+
+// Floating Label Input Field
+.floatingLabelInput {
+    margin-bottom: 21px;
+    position: relative;
+
+
+    .floatingLabelInput__inputField {
+        background: rgba(255, 255, 255, 0);
+        border: 1px solid transparent;
+        box-sizing: border-box;
+        box-shadow: inset 0px 1px 5px rgba(142, 142, 142, 0.5);
+        display: block;
+        font-size: 16px;
+        font-weight: 300;
+        height: 54px;
+        line-height: 19px;
+        padding: 26px 11px 9px 11px;
+        position: relative;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .floatingLabelInput__inputLabel {
+        color: $text-secondary;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 22px;
+        opacity: 0.5;
+        padding: 16px 15px;
+        position: absolute;
+        top: 0;
+        transition: all 200ms;
+    }
+
+    // Animation
+    .floatingLabelInput__inputField:focus + .floatingLabelInput__inputLabel, // Shift label up when input field has :focus.
+    .floatingLabelInput__inputField.isInvalid + .floatingLabelInput__inputLabel, // Keeps label up when input field is valid
+    .floatingLabelInput__inputField.isValid + .floatingLabelInput__inputLabel { //  and when it is invalid.
+        font-size: 12px;
+        font-weight: 300;
+        opacity: 1;
+        padding: 5px 0 0 11px;
+        position: absolute;
+        top: 0px;
+        transition: all 200ms;
+    }
+
+    // Input field validation styling
+    .floatingLabelInput__inputField.isInvalid {
+        border: 1px solid red;
+        color: red;
+    }
+
+    .floatingLabelInput__inputField.isInvalid + .floatingLabelInput__inputLabel {
+        color: red;
+    }
+}
+

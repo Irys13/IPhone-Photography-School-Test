@@ -124,7 +124,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
+  content: '';
   content: none;
 }
 
@@ -170,5 +170,60 @@ body {
 
 .button--purplePink {
   background: linear-gradient(90deg, #ac519c 0.83%, #E5424F 100%);
+}
+
+.floatingLabelInput {
+  margin-bottom: 21px;
+  position: relative;
+}
+
+.floatingLabelInput .floatingLabelInput__inputField {
+  box-shadow: inset 0px 1px 5px rgba(142, 142, 142, 0.5);
+  padding: 26px 11px 9px 11px;
+  border: 1px solid transparent;
+  z-index: 1;
+  position: relative;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  background: rgba(255, 255, 255, 0);
+  height: 19px;
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+  height: 54px;
+}
+
+.floatingLabelInput .floatingLabelInput__inputLabel {
+  padding: 16px 15px;
+  transition: all 200ms;
+  opacity: 0.5;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  position: absolute;
+  top: 0;
+  color: #848484;
+}
+
+.floatingLabelInput .floatingLabelInput__inputField:focus + .floatingLabelInput__inputLabel,
+.floatingLabelInput .floatingLabelInput__inputField.isInvalid + .floatingLabelInput__inputLabel,
+.floatingLabelInput .floatingLabelInput__inputField.isValid + .floatingLabelInput__inputLabel {
+  font-size: 12px;
+  top: 0px;
+  position: absolute;
+  font-weight: 300;
+  opacity: 1;
+  padding: 8px 0 0 11px;
+  transition: all 200ms;
+}
+
+.floatingLabelInput .floatingLabelInput__inputField.isInvalid {
+  border: 1px solid red;
+  color: red;
+}
+
+.floatingLabelInput .floatingLabelInput__inputField.isInvalid + .floatingLabelInput__inputLabel {
+  color: red;
 }
 

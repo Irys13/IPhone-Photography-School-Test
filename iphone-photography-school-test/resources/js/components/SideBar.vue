@@ -5,7 +5,9 @@
 </template>
 
 <style lang="scss">
+@import 'resources/sass/css-reset';
 @import 'resources/sass/variables';
+@import 'resources/sass/general-styling';
 
     .SideBar {
         background: #F5F5F5;

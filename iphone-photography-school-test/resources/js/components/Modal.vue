@@ -31,7 +31,9 @@
 </template>
 
 <style lang="scss">
+@import 'resources/sass/css-reset';
 @import 'resources/sass/variables';
+@import 'resources/sass/general-styling';
 
 .Modal__window {
     align-items: center;
