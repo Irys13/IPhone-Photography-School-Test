@@ -3,7 +3,7 @@
     <h1 class="BlogPost__title">10 Best Photo Apps For Incredible
     iPhone Photography (2020 Edition)</h1>
 
-    <hr class="BlogPost__divider"></hr>
+    <hr class="BlogPost__divider">
 
     <p class="BlogPost__content">How do you capture more
     interesting travel photos with your iPhone? How do you avoid
@@ -52,7 +52,10 @@
     </div>
 </template>
 
-<style>
+<style lang="scss">
+@import 'resources/sass/css-reset';
+@import 'resources/sass/variables';
+@import 'resources/sass/general-styling';
 
 .BlogPost {
     display: inline-block;
@@ -68,7 +71,7 @@
 }
 
 .BlogPost__divider {
-    background: linear-gradient(90deg, #AC519C 0.83%, #E5424F 100%);
+    background: linear-gradient(90deg, $gradient-background 0.83%, $gradient-background-secondary 100%);
     border: 0;
     height: 1px;
     margin: 16px 0 45px;

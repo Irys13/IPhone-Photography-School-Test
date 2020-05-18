@@ -30,7 +30,11 @@
 </div>
 </template>
 
-<style>
+<style lang="scss">
+@import 'resources/sass/css-reset';
+@import 'resources/sass/variables';
+@import 'resources/sass/general-styling';
+
 .Modal__window {
     align-items: center;
     background: rgb(38, 38, 38, 0.8);
@@ -47,7 +51,7 @@
 }
 
 .Modal__content {
-    background: #ffffff;
+    background: $background-primary;
     padding: 18px 65px 38px 65px;
     width: 440px;
 }
@@ -72,11 +76,11 @@
 }
 
 .stepProgress--colour {
-    background: linear-gradient(90deg, #AC519C 0.83%, #E5424F 100%);
+    background: linear-gradient(90deg, $gradient-background 0.83%, $gradient-background-secondary 100%);
 }
 
 .stepProgress--gray {
-    background-color: #E5E5E5;
+    background-color: $gray-light;
 }
 
 .Modal__closeButton {
@@ -90,7 +94,7 @@
 }
 
 .Modal__title {
-    color: #464646;
+    color: $gray-dark;
     font-size: 23px;
     font-weight: bold;
     text-align: center;
@@ -100,7 +104,7 @@
 }
 
 .Modal__title--green {
-    color: #007A02;
+    color: $green;
 }
 
 .Modal__email {
@@ -108,7 +112,7 @@
 }
 
 .closeButton--x {
-    background-color: #464646;
+    background-color: $gray-dark;
     height: 3px;
     width: 20px;
 }
