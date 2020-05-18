@@ -83,12 +83,12 @@ body {
 
     // Input field validation styling
     .floatingLabelInput__inputField.isInvalid {
-        border: 1px solid red;
-        color: red;
+        border: 1px solid $error;
+        color: $error;
     }
 
     .floatingLabelInput__inputField.isInvalid + .floatingLabelInput__inputLabel {
-        color: red;
+        color: $error;
     }
 }
 
