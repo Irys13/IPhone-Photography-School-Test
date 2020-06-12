@@ -41,7 +41,7 @@
     display: flex;
     height: 100%;
     justify-content: center;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     top: 0;
@@ -52,8 +52,14 @@
 
 .Modal__content {
     background: $background-primary;
-    padding: 18px 65px 38px 65px;
-    width: 440px;
+    width: 100%;
+    max-width: 440px;
+    padding: 13px 17px 24px 18px;
+
+    @media screen and (min-width: $md-screen) {
+        padding: 18px 65px 38px 65px;
+        width: 440px;
+    }
 }
 
 .Modal__header {
@@ -88,9 +94,13 @@
     border: 0;
     height: 45px;
     position: absolute;
+    right: -26px;
     top: -18px;
-    right: -65px;
     width: 45px;
+
+    @media screen and (min-width: $md-screen) {
+        right: -65px;
+    }
 }
 
 .Modal__title {
@@ -101,6 +111,14 @@
     line-height: 28px;
     margin-bottom: 21px;
     margin-top: 23px;
+
+    br {
+        display: none;
+
+        @media screen and (min-width: $xs-screen) {
+            display: block;
+        }
+    }
 }
 
 .Modal__title--green {

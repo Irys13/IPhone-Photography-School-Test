@@ -161,9 +161,9 @@ body {
 @media screen and (min-width: 414px) {
   .BlogContainer {
     margin: 0 auto;
-    width: 379px;
     padding-bottom: 138px;
     padding-top: 76px;
+    width: 379px;
   }
 }
 
@@ -180,6 +180,7 @@ body {
 }
 
 .button {
+  border: 0;
   box-shadow: 0px 3px 10px rgba(104, 104, 104, 0.5);
   color: #fff;
   display: block;
@@ -189,7 +190,6 @@ body {
   padding: 11px;
   text-align: center;
   width: 100%;
-  border: 0;
 }
 
 .button--purplePink {
