@@ -149,13 +149,38 @@ body {
 }
 
 .BlogContainer {
-  margin: 0 auto;
-  padding-bottom: 138px;
-  padding-top: 76px;
-  width: 900px;
+  padding: 25px 0 37px 0;
+}
+
+@media screen and (min-width: 375px) {
+  .BlogContainer {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  .BlogContainer {
+    margin: 0 auto;
+    padding-bottom: 138px;
+    padding-top: 76px;
+    width: 379px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .BlogContainer {
+    width: 732px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .BlogContainer {
+    width: 900px;
+  }
 }
 
 .button {
+  border: 0;
   box-shadow: 0px 3px 10px rgba(104, 104, 104, 0.5);
   color: #fff;
   display: block;
@@ -165,7 +190,6 @@ body {
   padding: 11px;
   text-align: center;
   width: 100%;
-  border: 0;
 }
 
 .button--purplePink {
@@ -178,52 +202,51 @@ body {
 }
 
 .floatingLabelInput .floatingLabelInput__inputField {
-  box-shadow: inset 0px 1px 5px rgba(142, 142, 142, 0.5);
-  padding: 26px 11px 9px 11px;
-  border: 1px solid transparent;
-  z-index: 1;
-  position: relative;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 19px;
   background: rgba(255, 255, 255, 0);
-  height: 19px;
-  width: 100%;
+  border: 1px solid transparent;
   box-sizing: border-box;
+  box-shadow: inset 0px 1px 5px rgba(142, 142, 142, 0.5);
   display: block;
+  font-size: 16px;
+  font-weight: 300;
   height: 54px;
+  line-height: 19px;
+  padding: 26px 11px 9px 11px;
+  position: relative;
+  width: 100%;
+  z-index: 1;
 }
 
 .floatingLabelInput .floatingLabelInput__inputLabel {
-  padding: 16px 15px;
-  transition: all 200ms;
-  opacity: 0.5;
-  font-weight: 300;
+  color: #848484;
   font-size: 18px;
+  font-weight: 300;
   line-height: 22px;
+  opacity: 0.5;
+  padding: 16px 15px;
   position: absolute;
   top: 0;
-  color: #848484;
+  transition: all 200ms;
 }
 
 .floatingLabelInput .floatingLabelInput__inputField:focus + .floatingLabelInput__inputLabel,
 .floatingLabelInput .floatingLabelInput__inputField.isInvalid + .floatingLabelInput__inputLabel,
 .floatingLabelInput .floatingLabelInput__inputField.isValid + .floatingLabelInput__inputLabel {
   font-size: 12px;
-  top: 0px;
-  position: absolute;
   font-weight: 300;
   opacity: 1;
-  padding: 8px 0 0 11px;
+  padding: 5px 0 0 11px;
+  position: absolute;
+  top: 0px;
   transition: all 200ms;
 }
 
 .floatingLabelInput .floatingLabelInput__inputField.isInvalid {
-  border: 1px solid red;
-  color: red;
+  border: 1px solid #E51323;
+  color: #E51323;
 }
 
 .floatingLabelInput .floatingLabelInput__inputField.isInvalid + .floatingLabelInput__inputLabel {
-  color: red;
+  color: #E51323;
 }
 
