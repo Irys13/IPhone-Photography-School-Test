@@ -58,9 +58,20 @@
 @import 'resources/sass/general-styling';
 
 .BlogPost {
-    display: inline-block;
-    margin-right: 70px;
-    width: 560px;
+    display: block;
+    width: 100%;
+
+    @media screen and (min-width: $md-screen) {
+        display: inline-block;
+        margin-right: 20px;
+        width: 448px;
+    }
+
+    @media screen and(min-width: $lg-screen) {
+        margin-right: 70px;
+        width: 560px;
+    }
+
 }
 
 .BlogPost__title {
@@ -75,6 +86,11 @@
     border: 0;
     height: 1px;
     margin: 16px 0 45px;
+
+    @media screen and (max-width: $sm-screen) {
+        margin-left: 17px;
+        margin-right: 18px;
+    }
 }
 
 .BlogPost__content {
@@ -86,11 +102,17 @@
 
 .BlogPost__image {
     margin: 28px 0 44px;
+    width: 100%;
 }
 
 .BlogPost__subtitle {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 15px;
+}
+
+.BlogPost__title, .BlogPost__subtitle, .BlogPost__divider, .BlogPost__content {
+    padding-left: 17px;
+    padding-right: 18px;
 }
 </style>

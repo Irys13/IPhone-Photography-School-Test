@@ -11,11 +11,35 @@
 
     .SideBar {
         background: #F5F5F5;
-        display: inline-block;
-        height: 640px;
-        padding: 50px 24px 50px 26px ;
-        vertical-align: top;
-        width: 220px;
+        display: block;
+        height: 426px;
+        margin-left: 17px;
+        margin-right: 18px;
+        margin-top: 33px;
+        padding: 34px 29px;
+        width: auto;
+
+        @media screen and (min-width: $xs-screen) {
+            margin: 0 auto;
+            margin-top: 33px;
+            width: 282px;
+        }
+
+        @media screen and (min-width: $sm-screen) {
+            margin-top: 68px;
+            padding: 50px 24px 50px 26px;
+        }
+
+        @media screen and (min-width: $md-screen) {
+            display: inline-block;
+            height: 640px;
+            vertical-align: top;
+            width: 200px;
+        }
+
+        @media screen and (min-width: $lg-screen) {
+            width: 220px;
+        }
     }
 </style>
 

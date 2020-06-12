@@ -11,13 +11,30 @@ body {
 
 
 .BlogContainer {
-    margin: 0 auto;
-    padding-bottom: 138px;
-    padding-top: 76px;
-    width: 900px;
+    padding: 25px 0 37px 0;
+
+    @media screen and (min-width: $xs-screen) {
+        width: 100%;
+    }
+
+    @media screen and (min-width: $sm-screen) {
+        margin: 0 auto;
+        padding-bottom: 138px;
+        padding-top: 76px;
+        width: 379px;
+    }
+
+    @media screen and (min-width: $md-screen) {
+        width: 732px;
+    }
+
+    @media screen and (min-width: $lg-screen) {
+        width: 900px;
+    }
 }
 
 .button {
+    border: 0;
     box-shadow: 0px 3px 10px rgba(104, 104, 104, 0.5);
     color: $background-primary;
     display: block;
@@ -27,7 +44,6 @@ body {
     padding: 11px;
     text-align: center;
     width: 100%;
-    border: 0;
 }
 
 .button--purplePink {
@@ -38,7 +54,6 @@ body {
 .floatingLabelInput {
     margin-bottom: 21px;
     position: relative;
-
 
     .floatingLabelInput__inputField {
         background: rgba(255, 255, 255, 0);
