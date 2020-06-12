@@ -15,7 +15,7 @@
     Read on to discover how to take better travel photos with your
     iPhone!</p>
 
-    <img class="BlogPost__image" src="images/blog-image.png">
+    <img class="BlogPost__image" src="images/blog-image.svg">
 
     <h2 class="BlogPost__subtitle">1. Research Your Destination To
     Find The Best Photo Opportunities</h2>
@@ -99,6 +99,41 @@
     line-height: 24px;
     margin-bottom: 15px;
 }
+
+/*
+ABOUT RETINA READY IMAGES
+
+The picture I have found in Figma has only 560px. I would need picture
+of size of 1120px to make it retina ready (downsize image by half or
+use SVG). Alternative is to use SVG image, while I have downloaded the
+image in SVG format I think it doesn't make the cut.
+For retina images I would also use this media queries:
+@media
+only screen and (-webkit-min-device-pixel-ratio: 3),
+only screen and (   min--moz-device-pixel-ratio: 3),
+only screen and (     -o-min-device-pixel-ratio: 3/1),
+only screen and (        min-device-pixel-ratio: 3),
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+.BlogPost__image{
+    width: 50%;
+    height: 50%;
+}
+
+//extra wrapping
+.BlogPost__imageContainer {
+    .BlogPost__image{
+      width: 150px;
+      height: 150px;
+    }
+}
+
+*/
 
 .BlogPost__image {
     margin: 28px 0 44px;
